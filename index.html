@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResilientMind: Strategic Plan for the קריאת אמת App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #0f172a; /* slate-900 */
+        }
+        .dark body {
+            background-color: #0f172a; /* slate-900 */
+            color: #f8fafc; /* slate-50 */
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.3); /* slate-800 with opacity */
+            border: 1px solid rgba(51, 65, 85, 0.5); /* slate-700 with opacity */
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top, rgba(14, 165, 233, 0.1), transparent 40%);
+        }
+        .dark .hero-gradient {
+            background: radial-gradient(circle at top, rgba(56, 189, 248, 0.1), transparent 40%);
+        }
+        .section-gradient {
+             background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.05), transparent 50%);
+        }
+        .dark .section-gradient {
+             background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.05), transparent 50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-card">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-sky-500">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                </svg>
+                <h1 class="text-xl font-bold text-slate-800 dark:text-white">ResilientMind <span class="text-base font-medium text-slate-500 dark:text-slate-400">/ קריאת אמת</span></h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+                <a href="#problem" class="hover:text-sky-500 transition-colors">The Crisis</a>
+                <a href="#solution" class="hover:text-sky-500 transition-colors">Our Solution</a>
+                <a href="#plan" class="hover:text-sky-500 transition-colors">The Plan</a>
+                <a href="#sustainability" class="hover:text-sky-500 transition-colors">Sustainability</a>
+                <a href="#future" class="hover:text-sky-500 transition-colors">Future Vision</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                 <button id="theme-toggle" class="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+                    <i data-lucide="sun" class="block dark:hidden"></i>
+                    <i data-lucide="moon" class="hidden dark:block"></i>
+                </button>
+                <a href="#" class="hidden sm:block bg-sky-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-sky-600 transition-all transform hover:scale-105">Get Involved</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="home" class="hero-gradient py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <span class="text-sky-500 font-semibold">A Strategic Plan for National Resilience</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mt-4 mb-6 leading-tight">
+                    Building a First Line of Defense for Mental Health in Israel.
+                </h2>
+                <p class="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-300 mb-10">
+                    ResilientMind is a technology company building **קריאת אמת**, a platform providing immediate, anonymous, and professional support to soldiers, veterans, and families facing trauma. This is our plan to launch, validate, and scale our impact.
+                </p>
+                <a href="#plan" class="bg-sky-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-sky-600 transition-all transform hover:scale-105 shadow-lg shadow-sky-500/20">Explore the Plan</a>
+            </div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problem" class="py-24 section-gradient">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h3 class="text-base font-semibold text-sky-500 tracking-wider uppercase">The Crisis</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">A Quantifiable National Emergency</h4>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+                        Israel's mental healthcare system is facing a systemic failure, unable to meet the overwhelming demand. This creates a massive, underserved population born from urgent social need.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Stat Card 1 -->
+                    <div class="p-8 rounded-2xl glass-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block p-4 bg-sky-100 dark:bg-sky-900/50 rounded-full mb-4">
+                            <i data-lucide="users" class="text-sky-500"></i>
+                        </div>
+                        <h5 class="text-4xl font-bold text-slate-900 dark:text-white">1 in 5</h5>
+                        <p class="mt-2 text-slate-600 dark:text-slate-300">of the general population is suffering from PTSD and anxiety symptoms following recent national traumas.</p>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div class="p-8 rounded-2xl glass-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block p-4 bg-red-100 dark:bg-red-900/50 rounded-full mb-4">
+                            <i data-lucide="clock" class="text-red-500"></i>
+                        </div>
+                        <h5 class="text-4xl font-bold text-slate-900 dark:text-white">3 Years</h5>
+                        <p class="mt-2 text-slate-600 dark:text-slate-300">is the reported wait time for a psychologist in the public system, a catastrophic delay for those in acute distress.</p>
+                    </div>
+                    <!-- Stat Card 3 -->
+                    <div class="p-8 rounded-2xl glass-card text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block p-4 bg-amber-100 dark:bg-amber-900/50 rounded-full mb-4">
+                            <i data-lucide="shield-off" class="text-amber-500"></i>
+                        </div>
+                        <h5 class="text-4xl font-bold text-slate-900 dark:text-white">Stigma</h5>
+                        <p class="mt-2 text-slate-600 dark:text-slate-300">in military culture prevents soldiers from seeking help, making anonymous platforms the only viable option for many.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution Section -->
+        <section id="solution" class="py-24 bg-slate-100 dark:bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h3 class="text-base font-semibold text-sky-500 tracking-wider uppercase">Our Solution</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">The קריאת אמת App</h4>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+                        Our app, **קריאת אמת**, is a fully developed platform ready for launch, designed to dismantle the barriers to mental healthcare.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature Card -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                            <i data-lucide="user-check" class="text-sky-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-slate-900 dark:text-white">Immediate & Anonymous Access</h5>
+                            <p class="mt-1 text-slate-600 dark:text-slate-300">Users connect with therapists using a pseudonym, removing the barriers of identity and stigma.</p>
+                        </div>
+                    </div>
+                     <!-- Feature Card -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                            <i data-lucide="award" class="text-sky-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-slate-900 dark:text-white">Licensed Israeli Professionals</h5>
+                            <p class="mt-1 text-slate-600 dark:text-slate-300">A network of manually vetted, licensed therapists who understand the cultural and military context.</p>
+                        </div>
+                    </div>
+                     <!-- Feature Card -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                            <i data-lucide="bot" class="text-sky-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-slate-900 dark:text-white">AI-Powered Support</h5>
+                            <p class="mt-1 text-slate-600 dark:text-slate-300">A clinical AI assistant provides initial emotional support and gathers context for human therapists.</p>
+                        </div>
+                    </div>
+                     <!-- Feature Card -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                            <i data-lucide="clipboard-list" class="text-sky-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-slate-900 dark:text-white">Clinical Tools</h5>
+                            <p class="mt-1 text-slate-600 dark:text-slate-300">Integrated questionnaires (PCL-5, PHQ-9, GAD-7) for evidence-based progress tracking.</p>
+                        </div>
+                    </div>
+                     <!-- Feature Card -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 p-3 bg-white dark:bg-slate-800 rounded-lg shadow-md">
+                            <i data-lucide="eye-off" class="text-sky-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-slate-900 dark:text-white">"Panic/Hide Mode"</h5>
+                            <p class="mt-1 text-slate-600 dark:text-slate-300">A unique feature to instantly disguise the app, designed for users who lack privacy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Plan Section -->
+        <section id="plan" class="py-24 section-gradient">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h3 class="text-base font-semibold text-sky-500 tracking-wider uppercase">Phase 1: The Plan</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Launch & Validation with a $7k Seed Round</h4>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+                        This initial phase is designed for maximum impact with minimal capital. Our objective is to launch the MVP, establish a user base, and gather the clinical data to prove our model's effectiveness.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-slate-800/50 p-8 md:p-12 rounded-3xl shadow-2xl shadow-slate-200/50 dark:shadow-black/20">
+                    <h5 class="text-2xl font-bold text-center mb-10">Use of Funds: $7,000</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 text-center">
+                        <!-- Budget Item -->
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl font-bold text-sky-500">$2,000</div>
+                            <div class="font-semibold mt-2">Server & Hosting</div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">12 months of robust cloud infrastructure.</p>
+                        </div>
+                        <!-- Budget Item -->
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl font-bold text-sky-500">$2,000</div>
+                            <div class="font-semibold mt-2">Freelance Engineering</div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Contractors for security audits & integrations.</p>
+                        </div>
+                        <!-- Budget Item -->
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl font-bold text-sky-500">$1,500</div>
+                            <div class="font-semibold mt-2">Software & APIs</div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Licenses for database, security, and video.</p>
+                        </div>
+                        <!-- Budget Item -->
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl font-bold text-sky-500">$1,000</div>
+                            <div class="font-semibold mt-2">Legal & Incorporation</div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Company registration and legal review.</p>
+                        </div>
+                        <!-- Budget Item -->
+                        <div class="flex flex-col items-center">
+                            <div class="text-3xl font-bold text-sky-500">$500</div>
+                            <div class="font-semibold mt-2">Contingency</div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Buffer for unforeseen launch expenses.</p>
+                        </div>
+                    </div>
+                    <hr class="my-10 border-slate-200 dark:border-slate-700">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <h6 class="font-bold text-lg">Operational Plan</h6>
+                            <p class="text-slate-600 dark:text-slate-300 mt-2">Founder as CTO (sweat equity), supplemented by specialized contractors. User acquisition will be organic, driven by mission-focused outreach and veteran community partnerships.</p>
+                        </div>
+                        <div>
+                            <h6 class="font-bold text-lg">Pricing Model</h6>
+                            <p class="text-slate-600 dark:text-slate-300 mt-2">Service will be **free for all users** during Phase 1. This is a strategic investment to rapidly acquire users and therapists motivated by the national mission.</p>
+                        </div>
+                        <div>
+                            <h6 class="font-bold text-lg">Key Performance Indicators</h6>
+                            <p class="text-slate-600 dark:text-slate-300 mt-2">Success is measured by user/therapist acquisition, session engagement, and **positive clinical outcomes** shown in aggregated, anonymized data from our clinical tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sustainability Section -->
+        <section id="sustainability" class="py-24 bg-slate-100 dark:bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-base font-semibold text-sky-500 tracking-wider uppercase">Phase 2: The Path to Sustainability</h3>
+                        <h4 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Government & Institutional Contracts (B2G)</h4>
+                        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+                            Our sole focus for long-term sustainability is to integrate our platform into the national healthcare infrastructure. The clinical data gathered in Phase 1 is the key to unlocking these large-scale, recurring revenue contracts.
+                        </p>
+                        <div class="mt-8 space-y-4">
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
+                                <span class="text-slate-700 dark:text-slate-200">**The Pitch:** Approach the Ministry of Defense and HMOs with a cost-effective, scalable, and clinically proven solution.</span>
+                            </div>
+                             <div class="flex items-center">
+                                <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
+                                <span class="text-slate-700 dark:text-slate-200">**The Value:** Offer a turnkey, anonymous solution to offload their overwhelmed systems and treat the "gap population."</span>
+                            </div>
+                             <div class="flex items-center">
+                                <i data-lucide="check-circle-2" class="text-green-500 mr-3"></i>
+                                <span class="text-slate-700 dark:text-slate-200">**The Model:** Secure stable, recurring revenue through large-scale licensing or per-member-per-month (PMPM) agreements.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 rounded-2xl glass-card">
+                        <img src="https://placehold.co/600x400/38bdf8/ffffff?text=Data-Driven+Partnerships" alt="Illustration of data charts and partnership handshake" class="rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Vision Section -->
+        <section id="future" class="py-24 section-gradient">
+            <div class="container mx-auto px-6">
+                 <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h3 class="text-base font-semibold text-sky-500 tracking-wider uppercase">Future Vision</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">Scaling for National Impact</h4>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+                        A second investment round will be sought only after achieving initial revenue. These funds will be used to scale aggressively and solidify our position as a core component of Israel's mental health infrastructure.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Future Goal -->
+                    <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <i data-lucide="megaphone" class="text-sky-500 mb-4"></i>
+                        <h5 class="font-semibold">Dedicated Marketing</h5>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Launch large-scale campaigns to significantly increase user acquisition.</p>
+                    </div>
+                    <!-- Future Goal -->
+                    <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <i data-lucide="briefcase" class="text-sky-500 mb-4"></i>
+                        <h5 class="font-semibold">Business Development</h5>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Build a professional team to secure and manage complex B2G contracts.</p>
+                    </div>
+                    <!-- Future Goal -->
+                    <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <i data-lucide="video" class="text-sky-500 mb-4"></i>
+                        <h5 class="font-semibold">Full-Service Platform</h5>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Develop proprietary in-house features like integrated video to improve margins.</p>
+                    </div>
+                    <!-- Future Goal -->
+                    <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                        <i data-lucide="users-2" class="text-sky-500 mb-4"></i>
+                        <h5 class="font-semibold">Expanded Offerings</h5>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Introduce group therapy sessions and other specialized services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 dark:bg-slate-900/50">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h5 class="text-2xl font-bold">Join Us in Building a More Resilient Future.</h5>
+            <p class="mt-4 max-w-xl mx-auto text-slate-600 dark:text-slate-300">
+                The initial $7,000 investment is the catalyst to unlock this potential. Contact us to learn more about how you can be a part of this critical mission.
+            </p>
+            <div class="mt-8">
+                <a href="mailto:contact@resilientmind.org.il" class="bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600 transition-all transform hover:scale-105">Contact Us</a>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-12">&copy; 2025 ResilientMind Inc. The קריאת אמת app. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          htmlEl.classList.add('dark');
+        } else {
+          htmlEl.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (htmlEl.classList.contains('dark')) {
+                htmlEl.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlEl.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>
